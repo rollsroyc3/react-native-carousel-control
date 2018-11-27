@@ -31,7 +31,7 @@ export default class Carousel extends Component {
         sneak: PropTypes.number,
         transitionDelay: PropTypes.number,
         currentPage: PropTypes.number,
-        swipeThreshold: PropTypes.number
+        swipeThreshold: PropTypes.number,
         scrollEnabled: PropTypes.bool,
     };
 
@@ -44,7 +44,7 @@ export default class Carousel extends Component {
         noItemsText: "Sorry, there are currently \n no items available",
         transitionDelay: 0,
         currentPage: 0,
-        swipeThreshold: 0.5
+        swipeThreshold: 0.5,
         scrollEnabled: false
     };
 
