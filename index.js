@@ -33,6 +33,7 @@ export default class Carousel extends Component {
         currentPage: PropTypes.number,
         swipeThreshold: PropTypes.number,
         scrollEnabled: PropTypes.bool,
+        keyboardShouldPersistTaps: PropTypes.string
     };
 
     static defaultProps = {
@@ -45,7 +46,8 @@ export default class Carousel extends Component {
         transitionDelay: 0,
         currentPage: 0,
         swipeThreshold: 0.5,
-        scrollEnabled: false
+        scrollEnabled: false,
+        keyboardShouldPersistTaps: "never"
     };
 
     constructor(props) {
@@ -246,6 +248,7 @@ export default class Carousel extends Component {
                     ref={ c => this.scrollView = c }
                     showsHorizontalScrollIndicator={ false }
                     scrollEnabled={ this.props.scrollEnabled }
+                    keyboardShouldPersistTaps={ this.props.keyboardShouldPersistTaps }
                 >
                     { body }
                 </ScrollView>
